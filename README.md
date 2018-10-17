@@ -1,3 +1,5 @@
+[![Build Status](https://dev.azure.com/hectorcavazos/Parallel%20Testing/_apis/build/status/mtytester.devops)](https://dev.azure.com/hectorcavazos/Parallel%20Testing/_build/latest?definitionId=1)
+
 # Sample ASP.NET Core application for Azure Pipelines docs
 
 
