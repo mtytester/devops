@@ -2,7 +2,7 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core?view=vsts
 
 pool:
-  name: 'POC'
+  name: 'Default'
   
 variables:
   buildConfiguration: 'Release'
