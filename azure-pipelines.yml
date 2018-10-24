@@ -9,6 +9,7 @@ variables:
 
 steps:
 - script: |
+    dotnet restore
     dotnet build --configuration $(buildConfiguration)
     dotnet test dotnetcore-tests --configuration $(buildConfiguration) --logger trx --collect "Code coverage"
     dotnet publish --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)
@@ -17,12 +18,6 @@ steps:
   inputs:
     testRunner: VSTest
     testResultsFiles: '**/*.trx'
-    
-- task: DotNetCoreCLI@2
-  inputs:
-     command: restore
-     projects: '**/*.csproj'
-     feedsToUse: config
-     nugetConfigPath: NuGet.config
+
 
 - task: PublishBuildArtifacts@1
