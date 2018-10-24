@@ -17,5 +17,12 @@ steps:
   inputs:
     testRunner: VSTest
     testResultsFiles: '**/*.trx'
+    
+- task: DotNetCoreCLI@2
+  inputs:
+     command: restore
+     projects: '**/*.csproj'
+     feedsToUse: config
+     nugetConfigPath: NuGet.config
 
 - task: PublishBuildArtifacts@1
