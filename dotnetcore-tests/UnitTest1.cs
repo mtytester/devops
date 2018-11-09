@@ -33,5 +33,34 @@ namespace dotnetcore_tests
           // Assert
           Assert.AreEqual("Your contact page.", result.ViewData["Message"]);
         }
+
+        [TestMethod]
+        public void parallel1() {
+
+            System.Threading.Thread.Sleep(TimeSpan.FromSeconds(30));
+            Assert.IsTrue(5>1);
+        }
+        [TestMethod]
+        public void parallel2()
+        {
+
+            System.Threading.Thread.Sleep(TimeSpan.FromSeconds(30));
+            Assert.IsTrue(10<50);
+        }
+        [TestMethod]
+        public void parallel3()
+        {
+
+            System.Threading.Thread.Sleep(TimeSpan.FromSeconds(30));
+            Assert.IsTrue(5 > 1);
+        }
+
+        [TestMethod]
+        public void parallel4()
+        {
+
+            System.Threading.Thread.Sleep(TimeSpan.FromSeconds(30));
+            Assert.IsTrue(5 > 1);
+        }
     }
 }
