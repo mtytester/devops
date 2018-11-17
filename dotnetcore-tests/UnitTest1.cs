@@ -78,7 +78,8 @@ namespace dotnetcore_tests
             System.Threading.Thread.Sleep(TimeSpan.FromSeconds(30));
             Assert.IsTrue(5 > 1);
         }
-
+        
+        //From here tests last longer
         [TestMethod]
         public void parallel7()
         {
