@@ -62,5 +62,71 @@ namespace dotnetcore_tests
             System.Threading.Thread.Sleep(TimeSpan.FromSeconds(30));
             Assert.IsTrue(5 > 1);
         }
+
+        [TestMethod]
+        public void parallel5()
+        {
+
+            System.Threading.Thread.Sleep(TimeSpan.FromSeconds(30));
+            Assert.IsTrue(5 > 1);
+        }
+
+        [TestMethod]
+        public void parallel6()
+        {
+
+            System.Threading.Thread.Sleep(TimeSpan.FromSeconds(30));
+            Assert.IsTrue(5 > 1);
+        }
+
+        [TestMethod]
+        public void parallel7()
+        {
+
+            System.Threading.Thread.Sleep(TimeSpan.FromSeconds(40));
+            Assert.IsTrue(5 > 1);
+        }
+
+        [TestMethod]
+        public void parallel8()
+        {
+
+            System.Threading.Thread.Sleep(TimeSpan.FromSeconds(40));
+            Assert.IsTrue(5 > 1);
+        }
+
+        [TestMethod]
+        public void parallel9()
+        {
+
+            System.Threading.Thread.Sleep(TimeSpan.FromSeconds(40));
+            Assert.IsTrue(5 > 1);
+        }
+
+        [TestMethod]
+        public void parallel10()
+        {
+
+            System.Threading.Thread.Sleep(TimeSpan.FromSeconds(40));
+            Assert.IsTrue(5 > 1);
+        }
+
+        [TestMethod]
+        public void parallel11()
+        {
+
+            System.Threading.Thread.Sleep(TimeSpan.FromSeconds(40));
+            Assert.IsTrue(5 > 1);
+        }
+
+        [TestMethod]
+        public void parallel12()
+        {
+
+            System.Threading.Thread.Sleep(TimeSpan.FromSeconds(40));
+            Assert.IsTrue(5 > 1);
+        }
+
+
     }
 }
