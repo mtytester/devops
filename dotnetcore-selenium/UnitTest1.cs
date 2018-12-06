@@ -13,17 +13,89 @@ namespace dotnetcore_selenium
     public class UnitTest1
     {
         [TestMethod]
-        public void TestMethod1()
+        public void Test1()
         {
 
-            //String path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "chromedriver.exe");
-           // Debug.WriteLine(path);
-                IWebDriver driver = new ChromeDriver(@"C:\Users\hector.cavazos\Downloads\");
-                driver.Url = "http://localhost:58947/";
-                Thread.Sleep(5000);
-                driver.Close();
-
+         IWebDriver driver = new ChromeDriver();
+         driver.Url = "http://localhost:80/";
             
+
+         IWebElement ele = driver.FindElement(By.LinkText("About"));
+         ele.Click();
+         Thread.Sleep(20000);
+         driver.Close();
+
+        }
+
+        [TestMethod]
+        public void Test2() {
+            IWebDriver driver = new ChromeDriver();
+            driver.Url = "http://localhost:80/";
+
+
+            IWebElement ele = driver.FindElement(By.PartialLinkText("Add a Controller and View"));
+            ele.Click();
+            Thread.Sleep(20000);
+            driver.Close();
+
+        }
+
+        [TestMethod]
+        public void Test3() {
+            IWebDriver driver = new ChromeDriver();
+            driver.Url = "http://localhost:80/";
+
+
+            IWebElement ele = driver.FindElement(By.LinkText("Contact"));
+            ele.Click();
+            Thread.Sleep(20000);
+            driver.Close();
+
+
+        }
+
+        [TestMethod]
+        public void Test4()
+        {
+            IWebDriver driver = new ChromeDriver();
+            driver.Url = "http://localhost:80/";
+
+
+            IWebElement ele = driver.FindElement(By.LinkText("Run your app"));
+            ele.Click();
+            Thread.Sleep(20000);
+            driver.Close();
+
+
+        }
+
+        [TestMethod]
+        public void Test5()
+        {
+            IWebDriver driver = new ChromeDriver();
+            driver.Url = "http://localhost:80/";
+
+
+            IWebElement ele = driver.FindElement(By.LinkText("Use logging to log a message."));
+            ele.Click();
+            Thread.Sleep(20000);
+            driver.Close();
+
+
+        }
+
+        [TestMethod]
+        public void Test6()
+        {
+            IWebDriver driver = new ChromeDriver();
+            driver.Url = "http://localhost:80/";
+
+
+            IWebElement ele = driver.FindElement(By.LinkText("Security"));
+            ele.Click();
+            Thread.Sleep(20000);
+            driver.Close();
+
 
         }
     }
