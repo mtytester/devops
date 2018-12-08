@@ -5,7 +5,7 @@ using System;
 using System.Diagnostics;
 using System.IO;
 using System.Threading;
-using static System.Net.Mime.MediaTypeNames;
+
 
 namespace dotnetcore_selenium
 {
